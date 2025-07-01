@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Add a Creditor - Knowledge Base</title>
+    <meta name="description" content="Step-by-step guide to adding creditors to the debt settlement system">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div class="logo">
+                    <img src="../assets/images/logo.png" alt="Logo" class="logo-img">
+                    <h1 class="logo-text">Knowledge Base</h1>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <button class="search-toggle" id="searchToggle" aria-label="Search">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                
+                <div class="language-toggle" id="languageToggle">
+                    <span class="current-lang">EN</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 12,15 18,9"></polyline>
+                    </svg>
+                    <div class="language-dropdown">
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="es">Español</button>
+                    </div>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <h3 class="nav-section-title" data-en="English Articles" data-es="Artículos en Inglés">English Articles</h3>
+                <ul class="nav-list">
+                    <li><a href="debt-settlement-key-acronyms.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Debt Settlement: Key Acronyms, Words, and Phrases" data-es="Liquidación de Deudas: Acrónimos, Palabras y Frases Clave">Debt Settlement: Key Acronyms, Words, and Phrases</span>
+                    </a></li>
+                    <li><a href="english-objections.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="English Objections" data-es="Objeciones en Inglés">English Objections</span>
+                    </a></li>
+                    <li><a href="english-script.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="English Script" data-es="Script en Inglés">English Script</span>
+                    </a></li>
+                    <li><a href="tips-for-closing.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Tips for Closing" data-es="Consejos para Cerrar">Tips for Closing</span>
+                    </a></li>
+                    <li><a href="enrollment-guidelines.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Enrollment Guidelines" data-es="Pautas de Inscripción">Enrollment Guidelines</span>
+                    </a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-section">
+                <h3 class="nav-section-title" data-en="Spanish Articles" data-es="Artículos en Español">Spanish Articles</h3>
+                <ul class="nav-list">
+                    <li><a href="script-alivio-de-deuda-clg.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Debt Relief Script CLG" data-es="Script Alivio de Deuda CLG">Script Alivio de Deuda CLG</span>
+                    </a></li>
+                    <li><a href="tips-de-venta.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Sales Tips" data-es="Tips de Venta">Tips de Venta</span>
+                    </a></li>
+                    <li><a href="como-agregar-un-contacto.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Add a Contact" data-es="Cómo Agregar un Contacto">Cómo Agregar un Contacto</span>
+                    </a></li>
+                    <li><a href="como-entrar-a-forthdpp.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Access Forth/DPP" data-es="Cómo Entrar a Forth/DPP">Cómo Entrar a Forth/DPP</span>
+                    </a></li>
+                    <li><a href="como-agregar-un-acreedor.html" class="nav-link active">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Add a Creditor" data-es="Cómo Agregar un Acreedor">Cómo Agregar un Acreedor</span>
+                    </a></li>
+                    <li><a href="como-generar-un-reporte-de-credito.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Generate a Credit Report" data-es="Cómo Generar un Reporte de Crédito">Cómo Generar un Reporte de Crédito</span>
+                    </a></li>
+                    <li><a href="como-establecer-un-plan.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Establish a Plan" data-es="Cómo Establecer un Plan">Cómo Establecer un Plan</span>
+                    </a></li>
+                    <li><a href="como-agregar-una-cuenta-de-banco.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Add a Bank Account" data-es="Cómo Agregar una Cuenta de Banco">Cómo Agregar una Cuenta de Banco</span>
+                    </a></li>
+                    <li><a href="como-enviar-un-contrato.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Send a Contract" data-es="Cómo Enviar un Contrato">Cómo Enviar un Contrato</span>
+                    </a></li>
+                    <li><a href="como-editar-informacion-del-cliente.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Edit Client Information" data-es="Cómo Editar Información del Cliente">Cómo Editar Información del Cliente</span>
+                    </a></li>
+                    <li><a href="como-editar-informacion-del-plan.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="How to Edit Plan Information" data-es="Cómo Editar Información del Plan">Cómo Editar Información del Plan</span>
+                    </a></li>
+                    <li><a href="acreedores-no-aceptados-mas-comunes.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Most Common Non-Accepted Creditors" data-es="Acreedores No Aceptados Más Comunes">Acreedores No Aceptados Más Comunes</span>
+                    </a></li>
+                    <li><a href="acreedores-aceptados.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Accepted Creditors" data-es="Acreedores Aceptados">Accepted Creditors</span>
+                    </a></li>
+                    <li><a href="lista-de-objeciones-comunes.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="List of Common Objections" data-es="Lista de Objeciones Comunes">Lista de Objeciones Comunes</span>
+                    </a></li>
+                    <li><a href="template-de-verificacion-final.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Final Verification Template" data-es="Template de Verificación Final">Template de Verificación Final</span>
+                    </a></li>
+                    <li><a href="proceso-de-firma-para-co-aplicante.html" class="nav-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2v5l1 1h5m-4 5H8m8 4H8m2-8H8m6-7H6L4 4v16l2 2h12l2-2V8l-6-6Z"></path>
+                        </svg>
+                        <span data-en="Signing Process for Co-Applicant" data-es="Proceso de Firma para Co-Aplicante">Proceso de Firma para Co-Aplicante</span>
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol class="breadcrumb-list">
+                    <li class="breadcrumb-item">
+                        <a href="../index.html" class="breadcrumb-link" data-en="Home" data-es="Inicio">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="../index.html" class="breadcrumb-link" data-en="Spanish Articles" data-es="Artículos en Español">Spanish Articles</a>
+                    </li>
+                    <li class="breadcrumb-item" aria-current="page">
+                        <span data-en="How to Add a Creditor" data-es="Cómo Agregar un Acreedor">How to Add a Creditor</span>
+                    </li>
+                </ol>
+            </nav>
+
+            <!-- Article Header -->
+            <header class="article-header">
+                <div class="article-meta">
+                    <span class="article-category" data-en="Procedures" data-es="Procedimientos">Procedures</span>
+                    <span class="article-language" data-en="Spanish" data-es="Español">Spanish</span>
+                    <span class="article-date" data-en="Last updated: January 2024" data-es="Última actualización: Enero 2024">Last updated: January 2024</span>
+                </div>
+                <h1 class="article-title" data-en="How to Add a Creditor" data-es="Cómo Agregar un Acreedor">How to Add a Creditor</h1>
+                <p class="article-excerpt" data-en="Step-by-step guide to adding creditors to the debt settlement system" data-es="Guía paso a paso para agregar acreedores al sistema de liquidación de deudas">Step-by-step guide to adding creditors to the debt settlement system</p>
+            </header>
+
+            <!-- Article Content -->
+            <article class="article-content">
+                <section class="article-section">
+                    <h2 data-en="Overview" data-es="Resumen">Overview</h2>
+                    <p data-en="This guide will walk you through the process of adding creditors to the debt settlement system. Follow these steps carefully to ensure accurate data entry." data-es="Esta guía te llevará a través del proceso de agregar acreedores al sistema de liquidación de deudas. Sigue estos pasos cuidadosamente para asegurar una entrada de datos precisa.">This guide will walk you through the process of adding creditors to the debt settlement system. Follow these steps carefully to ensure accurate data entry.</p>
+                </section>
+
+                <section class="article-section">
+                    <h2 data-en="Step-by-Step Instructions" data-es="Instrucciones Paso a Paso">Step-by-Step Instructions</h2>
+                    
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3 data-en="Press the Creditors option" data-es="Presione la opción Creditors">Press the Creditors option</h3>
+                            <p data-en="Navigate to the main menu and select the 'Creditors' option to access the creditor management section." data-es="Navegue al menú principal y seleccione la opción 'Creditors' para acceder a la sección de gestión de acreedores.">Navigate to the main menu and select the 'Creditors' option to access the creditor management section.</p>
+                            <div class="step-image">
+                                <img src="../assets/images/creditors-menu.png" alt="Creditors menu option" data-en="Creditors menu option" data-es="Opción de menú Creditors">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3 data-en="Enter the creditor name" data-es="Introduzca el nombre del acreedor">Enter the creditor name</h3>
+                            <p data-en="In the creditor name field, enter the full legal name of the creditor as it appears on the credit report or billing statement." data-es="En el campo de nombre del acreedor, introduzca el nombre legal completo del acreedor tal como aparece en el reporte de crédito o estado de cuenta.">In the creditor name field, enter the full legal name of the creditor as it appears on the credit report or billing statement.</p>
+                            <div class="step-image">
+                                <img src="../assets/images/creditor-name-field.png" alt="Creditor name input field" data-en="Creditor name input field" data-es="Campo de entrada del nombre del acreedor">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3 data-en="Select the account type" data-es="Seleccione el tipo de cuenta">Select the account type</h3>
+                            <p data-en="Choose the appropriate account type from the dropdown menu. Common types include credit cards, personal loans, medical bills, and student loans." data-es="Elija el tipo de cuenta apropiado del menú desplegable. Los tipos comunes incluyen tarjetas de crédito, préstamos personales, facturas médicas y préstamos estudiantiles.">Choose the appropriate account type from the dropdown menu. Common types include credit cards, personal loans, medical bills, and student loans.</p>
+                            <div class="step-image">
+                                <img src="../assets/images/account-type-dropdown.png" alt="Account type selection" data-en="Account type selection" data-es="Selección de tipo de cuenta">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3 data-en="Add the current debt amount" data-es="Agregue el monto de deuda actual">Add the current debt amount</h3>
+                            <p data-en="Enter the current outstanding balance on the account. Use the most recent statement or credit report for accuracy." data-es="Introduzca el saldo pendiente actual en la cuenta. Use el estado de cuenta más reciente o reporte de crédito para mayor precisión.">Enter the current outstanding balance on the account. Use the most recent statement or credit report for accuracy.</p>
+                            <div class="step-image">
+                                <img src="../assets/images/debt-amount-field.png" alt="Debt amount input field" data-en="Debt amount input field" data-es="Campo de entrada del monto de deuda">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3 data-en="Select debt owner" data-es="Seleccione de quien es la deuda">Select debt owner</h3>
+                            <p data-en="Choose who owns the debt. Typically, you will select 'Applicant' for individual accounts. For joint accounts, select the appropriate owner." data-es="Elija de quién es la deuda. Típicamente, seleccionará 'Applicant' para cuentas individuales. Para cuentas conjuntas, seleccione el propietario apropiado.">Choose who owns the debt. Typically, you will select 'Applicant' for individual accounts. For joint accounts, select the appropriate owner.</p>
+                            <div class="step-image">
+                                <img src="../assets/images/debt-owner-selection.png" alt="Debt owner selection" data-en="Debt owner selection" data-es="Selección del propietario de la deuda">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-content">
+                            <h3 data-en="Press Save" data-es="Presione Save">Press Save</h3>
+                            <p data-en="Click the 'Save' button to add the creditor to the system. Verify all information is correct before saving." data-es="Haga clic en el botón 'Save' para agregar el acreedor al sistema. Verifique que toda la información sea correcta antes de guardar.">Click the 'Save' button to add the creditor to the system. Verify all information is correct before saving.</p>
+                            <div class="step-image">
+                                <img src="../assets/images/save-button.png" alt="Save button" data-en="Save button" data-es="Botón Save">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2 data-en="Important Notes" data-es="Notas Importantes">Important Notes</h2>
+                    <div class="info-box">
+                        <div class="info-box-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="m9 12 2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <div class="info-box-content">
+                            <h4 data-en="Accuracy is crucial" data-es="La precisión es crucial">Accuracy is crucial</h4>
+                            <p data-en="Ensure all creditor information is entered accurately. Incorrect information may affect the debt settlement process and client outcomes." data-es="Asegúrese de que toda la información del acreedor se introduzca con precisión. La información incorrecta puede afectar el proceso de liquidación de deudas y los resultados del cliente.">Ensure all creditor information is entered accurately. Incorrect information may affect the debt settlement process and client outcomes.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2 data-en="Troubleshooting" data-es="Solución de Problemas">Troubleshooting</h2>
+                    
+                    <div class="troubleshooting-item">
+                        <h4 data-en="Creditor not found in system" data-es="Acreedor no encontrado en el sistema">Creditor not found in system</h4>
+                        <p data-en="If the creditor name doesn't appear in the search results, you can add it manually by entering the full legal name." data-es="Si el nombre del acreedor no aparece en los resultados de búsqueda, puede agregarlo manualmente introduciendo el nombre legal completo.">If the creditor name doesn't appear in the search results, you can add it manually by entering the full legal name.</p>
+                    </div>
+
+                    <div class="troubleshooting-item">
+                        <h4 data-en="Invalid account type" data-es="Tipo de cuenta inválido">Invalid account type</h4>
+                        <p data-en="If the account type you need is not in the dropdown, contact your supervisor for guidance on how to proceed." data-es="Si el tipo de cuenta que necesita no está en el menú desplegable, contacte a su supervisor para obtener orientación sobre cómo proceder.">If the account type you need is not in the dropdown, contact your supervisor for guidance on how to proceed.</p>
+                    </div>
+
+                    <div class="troubleshooting-item">
+                        <h4 data-en="Save button not working" data-es="Botón Save no funciona">Save button not working</h4>
+                        <p data-en="Ensure all required fields are filled out completely. The save button will only be active when all mandatory information is provided." data-es="Asegúrese de que todos los campos requeridos estén completados. El botón de guardar solo estará activo cuando se proporcione toda la información obligatoria.">Ensure all required fields are filled out completely. The save button will only be active when all mandatory information is provided.</p>
+                    </div>
+                </section>
+
+                <section class="article-section">
+                    <h2 data-en="Related Articles" data-es="Artículos Relacionados">Related Articles</h2>
+                    <div class="related-articles">
+                        <a href="como-editar-informacion-del-cliente.html" class="related-article">
+                            <h4 data-en="How to Edit Client Information" data-es="Cómo Editar Información del Cliente">How to Edit Client Information</h4>
+                            <p data-en="Learn how to update and modify client information in the system" data-es="Aprenda cómo actualizar y modificar información del cliente en el sistema">Learn how to update and modify client information in the system</p>
+                        </a>
+                        <a href="como-establecer-un-plan.html" class="related-article">
+                            <h4 data-en="How to Establish a Plan" data-es="Cómo Establecer un Plan">How to Establish a Plan</h4>
+                            <p data-en="Guide to creating debt settlement plans for clients" data-es="Guía para crear planes de liquidación de deudas para clientes">Guide to creating debt settlement plans for clients</p>
+                        </a>
+                        <a href="acreedores-aceptados.html" class="related-article">
+                            <h4 data-en="Accepted Creditors" data-es="Acreedores Aceptados">Accepted Creditors</h4>
+                            <p data-en="List of creditors that accept debt settlement agreements" data-es="Lista de acreedores que aceptan acuerdos de liquidación de deudas">List of creditors that accept debt settlement agreements</p>
+                        </a>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Article Navigation -->
+            <nav class="article-navigation">
+                <a href="como-entrar-a-forthdpp.html" class="nav-prev">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15,18 9,12 15,6"></polyline>
+                    </svg>
+                    <div class="nav-content">
+                        <span class="nav-label" data-en="Previous" data-es="Anterior">Previous</span>
+                        <span class="nav-title" data-en="How to Access Forth/DPP" data-es="Cómo Entrar a Forth/DPP">How to Access Forth/DPP</span>
+                    </div>
+                </a>
+                <a href="como-generar-un-reporte-de-credito.html" class="nav-next">
+                    <div class="nav-content">
+                        <span class="nav-label" data-en="Next" data-es="Siguiente">Next</span>
+                        <span class="nav-title" data-en="How to Generate a Credit Report" data-es="Cómo Generar un Reporte de Crédito">How to Generate a Credit Report</span>
+                    </div>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9,18 15,12 9,6"></polyline>
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Search Modal -->
+    <div class="search-modal" id="searchModal">
+        <div class="search-overlay" id="searchOverlay"></div>
+        <div class="search-container">
+            <div class="search-header">
+                <div class="search-input-wrapper">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Search articles..." class="search-input">
+                    <button class="search-clear" id="searchClear">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="search-results" id="searchResults">
+                <div class="search-placeholder">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                    <p data-en="Search for articles, guides, and resources..." data-es="Busca artículos, guías y recursos...">Search for articles, guides, and resources...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-text" data-en="© 2024 Knowledge Base. All rights reserved." data-es="© 2024 Base de Conocimientos. Todos los derechos reservados.">© 2024 Knowledge Base. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" class="footer-link" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a>
+                <a href="#" class="footer-link" data-en="Terms of Service" data-es="Términos de Servicio">Terms of Service</a>
+                <a href="#" class="footer-link" data-en="Contact" data-es="Contacto">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/search.js"></script>
+</body>
+</html> 
+</html> 
